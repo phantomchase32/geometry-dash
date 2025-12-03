@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Geometry Dash Clone + Editor</title>
+  <link rel="stylesheet" href="geometry_dash.css" />
+</head>
+<body>
+  <div id="container">
+    <canvas id="game" width="900" height="500"></canvas>
+
+    <div id="levelCompleteScreen">
+      <div id="completeTitle">LEVEL COMPLETE!</div>
+      <div class="barStripe"></div>
+      <div class="barStripe"></div>
+      <div class="barStripe"></div>
+      <button id="btnNext" class="completeBtn">Next Level</button>
+      <button id="btnRetry" class="completeBtn">Retry</button>
+      <button id="btnMenu" class="completeBtn">Menu</button>
+    </div>
+
+    <div id="menuPanel">
+      <h1>Geometry Dash Clone</h1>
+      <button class="levelBtn" data-level="0">
+        <span>Stereo Lite</span><span>Normal</span>
+      </button>
+      <button class="levelBtn" data-level="1">
+        <span>Harder Dash</span><span>Hard</span>
+      </button>
+      <button class="levelBtn" data-level="2">
+        <span>Insane Run</span><span>Insane</span>
+      </button>
+      <button id="btnEditor" class="menuBtn">Level Editor</button>
+    </div>
+
+    <div id="editorHelp">
+      Editor: A/D = move • 1=Spike 2=Pad 3=Gravity 4=Speed • Left Click=place • Right Click=delete • E=Play Custom • Esc=Menu
+    </div>
+  </div>
+
+  <script src="geometry_dash.js"></script>
+</body>
+</html>
